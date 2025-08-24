@@ -1,0 +1,7 @@
+.countdown-container {
+  text-align: center;
+  border-style: double;
+  max-width: fit-content;
+  min-width: 25em;
+  min-height: 5em;
+}

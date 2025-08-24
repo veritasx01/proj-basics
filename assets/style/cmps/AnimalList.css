@@ -1,0 +1,18 @@
+.animal-table {
+  background: darkred;
+  color: white;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.animal-table th,
+.animal-table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+.animal-table a {
+  color: blue;
+  text-decoration: underline;
+}

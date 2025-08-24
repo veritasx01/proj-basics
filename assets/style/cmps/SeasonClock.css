@@ -1,0 +1,56 @@
+.season-card {
+  background-color: lightblue;
+  max-width: fit-content;
+  min-width: 25em;
+  margin-inline: auto;
+}
+.season-card h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.season-card img {
+  user-select: none;
+}
+.season-icon {
+  display: block;
+  margin: auto;
+  animation: rotation 10s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.winter {
+  background: lightblue;
+}
+.spring {
+  background: lightgreen;
+}
+.summer {
+  background: #ffeebc;
+}
+.autumn {
+  background: #ffdbbb;
+}
+.winter-dark {
+  background: #336688; 
+}
+.spring-dark {
+  background: #339933; 
+}
+.summer-dark {
+  background: #cc8800; 
+}
+.autumn-dark {
+  background: #cc6644;
+}
+.winter-dark,
+.spring-dark,
+.summer-dark,
+.autumn-dark {
+  color: white;
+}
