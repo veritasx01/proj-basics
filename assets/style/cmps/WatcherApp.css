@@ -3,3 +3,20 @@
   margin: 5px;
   padding: 5px;
 }
+
+.modal-backdrop {
+  background: red;
+  position: "fixed";
+  top: 0;
+  left: 0;
+  width: "50vw";
+  height: "40vh";
+  display: "flex";
+}
+
+.modal-content {
+  background: "#fff";
+  padding: "20px";
+  border-radius: "4px";
+  min-width: "300px";
+}

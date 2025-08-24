@@ -33,12 +33,8 @@ function remove(watcherId) {
   return storageService.remove(WATCHER_KEY, watcherId);
 }
 
-function save(watcher) {
-  if (watcher.id) {
-    return storageService.put(WATCHER_KEY, watcher);
-  } else {
-    return storageService.post(WATCHER_KEY, watcher);
-  }
+function save(watchers) {
+  utilService.saveToStorage(WATCHER_KEY,watchers);
 }
 
 function createWatcher(fullname = '', movies = '') {
@@ -82,6 +78,7 @@ function generateRandomWatcher() {
 function generateWatchers(num = 3, override = false) {
   let watchers = utilService.loadFromStorage(WATCHER_KEY) || [];
   if (override) {
+    if (watchers.length >= num) return watchers;
     watchers = [];
     for (let i = 0; i < num; i++) {
       watchers.push(generateRandomWatcher());
@@ -91,6 +88,6 @@ function generateWatchers(num = 3, override = false) {
       watchers.push(generateRandomWatcher());
     }
   }
-  utilService.saveToStorage(WATCHER_KEY, watchers);
+  save(watchers);
   return watchers;
 }

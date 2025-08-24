@@ -21,7 +21,7 @@ export function SeasonClock({ date = new Date() }) {
   const nextSeasonDate = getNextSeasonDate(now);
   const countdown = getCountdown(nextSeasonDate, now);
 
-  const imgSrc = `../assets/img/${season}.png`;
+  const imgSrc = `./assets/img/${season}.png`;
   return (
     <section
       className={`season-card ${isDark ? `${season}-dark` : season}`}

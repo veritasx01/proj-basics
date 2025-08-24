@@ -43,7 +43,7 @@ export function RootCmp() {
       <h1>Exercise 3</h1>
       <CountDown startFrom={10}/>
       <h1>Exercise 4</h1>
-      <WatcherApp amount={3}></WatcherApp>
+      <WatcherApp ></WatcherApp>
       <h1>Exercise 5</h1>
     </section>
   );
